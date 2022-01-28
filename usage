@@ -1,0 +1,7 @@
+	Options:
+        	-h              :       show usage (this prompt)
+	        -a              :       output as addbulk command
+      	 	-r              :       output as removebulk command
+	        -u              :       output as updatebulk command
+	        -n              :       number of skus to generate, default 1
+	        -o              :       output command to a file
