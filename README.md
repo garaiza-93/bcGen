@@ -1,4 +1,4 @@
-# bcgen
+# bcGen
 In conjuction with TF2Autobot, this Bash script is a handy tool to generate bulk commands for pricelist manipulation
 
 # Why?
@@ -10,7 +10,7 @@ As I expand my bot's pricelist, I come across items that are numbered, such as c
  
  # Installation
  ```
- git clone https://github.com/garaiza-93/bulk-command-generator
- cd bulk-command-generator
+ git clone https://github.com/garaiza-93/bcGen
+ cd bcGen
  ./bcGen.sh
  ```
