@@ -7,3 +7,10 @@ As I expand my bot's pricelist, I come across items that are numbered, such as c
    - Killstreak weapons, as all names contain "Killstreak", "Specialized Killstreak", and "professional Killstreak"
    - Unusuals, as all particle names in unusuals are the same.
    - General SKUs (ex: 1;6, 2;6 etc). Obviously, not all SKUs will be valid, but it still fulfills the goal of adding a LOT of items.
+ 
+ # Installation
+ ```
+ git clone https://github.com/garaiza-93/bulk-command-generator
+ cd bulk-command-generator
+ ./bcGen.sh
+ ```
