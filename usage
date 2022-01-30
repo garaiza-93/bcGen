@@ -1,3 +1,4 @@
+	!! denotes where text will be replaced. e.g. 'Mann Co. Supply Crate #!!'
 	Options:
         	-h              :       show usage (this prompt)
 	        -a              :       output as addbulk command
