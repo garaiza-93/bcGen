@@ -1,7 +1,7 @@
 	!! denotes where text will be replaced. e.g. 'Mann Co. Supply Crate #!!'
 	Options:
         	-h              :       show usage (this prompt)
-	        -a              :       output as addbulk command
+	        -a              :       output as addbulk command (default)
       	 	-r              :       output as removebulk command
 	        -u              :       output as updatebulk command
 	        -n              :       number of skus to generate, default 1

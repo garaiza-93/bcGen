@@ -1,8 +1,6 @@
 #!/bin/bash
 
-addCmd=0
-removeCmd=0
-updateCmd=0
+bulkCmd='!addbulk'
 lines=1
 file=''
 text=''
@@ -14,17 +12,13 @@ function help() {
 while getopts 'harun:o:' flag; do
 	case "${flag}" in
 		h) help exit 1 ;;
-		a) addCmd=1 removeCmd=0 updateCmd=0;;
-		r) addCmd=0 removeCmd=1 updateCmd=0;;
-		u) addCmd=0 removeCmd=0 updateCmd=1 ;;
+		a) bulkCmd='!addbulk';;
+		r) bulkCmd='!removebulk';;
+		u) bulkCmd='!updatebulk';;
 		n) lines=$OPTARG ;;
-		o) file="$OPTARG" ;;
+		o) file='$OPTARG' ;;
 	esac
 done
-if [ $(( addCmd^removeCmd^updateCmd )) -lt 1 ]; then
-	help
-	exit 1
-fi
 
 #check for text and process it
 if [ $(( $# - $OPTIND )) -lt 0 ]; then
@@ -35,5 +29,12 @@ else
 	echo "Text: ${text}"
 	echo "Lines: ${lines}"
 	
+	for (( i=1;i<=${lines};i++ ))
+	do
+		if [ $i -eq 1 ]; then
+			printf "%s " $bulkCmd		
+		fi
+			printf "item=%s \n" "${text/!!/$i}" #Modify this line if needed. For example, for extra paramters like 'group' or 'intent'
+	done
 fi
 
