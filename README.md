@@ -25,3 +25,4 @@ Options:
 	        -n  (number)    :       number of skus to generate, default 1
 	        -o  (filepath)  :       output command to a file
 ```
+Example: ``./bcGen.sh -an 100 'Mann Co. Supply Crate #!!'``
