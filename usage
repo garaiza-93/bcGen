@@ -1,8 +1,8 @@
-	!! denotes where text will be replaced. e.g. 'Mann Co. Supply Crate #!!'
-	Options:
-        	-h              :       show usage (this prompt)
+!! denotes where text will be replaced. e.g. 'Mann Co. Supply Crate #!!'
+Options:
+        	-h              :       show usage
 	        -a              :       output as addbulk command (default)
       	 	-r              :       output as removebulk command
 	        -u              :       output as updatebulk command
-	        -n              :       number of skus to generate, default 1
-	        -o              :       output command to a file
+	        -n  (number)    :       number of skus to generate, default 1
+	        -o  (filepath)  :       output command to a file
